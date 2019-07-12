@@ -67,7 +67,7 @@ class Buttons extends React.Component {
             <div className="center">
                 <ButtonToolbar>
                     <button className="btn btn-default" onClick={this.props.playButton}>Play</button>
-                    <button className="btn btn-default" onClick={this.props.pauseButton}>Pause</button>
+                    <button className="btn btn-default" onClick={this.props.pauseButton}>Stop</button>
                     <button className="btn btn-default" onClick={this.props.clear}>Clear</button>
                     <button className="btn btn-default" onClick={this.props.slow}>Slow</button>
                     <button className="btn btn-default" onClick={this.props.fast}>Fast</button>
