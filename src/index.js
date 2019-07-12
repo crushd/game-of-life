@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {ButtonToolbar, DropdownButton, Dropdown} from 'react-bootstrap'
+import {ButtonToolbar, DropdownButton, Dropdown,Card} from 'react-bootstrap'
 import './index.css';
 
 class Box extends React.Component {
@@ -226,6 +226,21 @@ class Main extends React.Component {
                     selectBox={this.selectBox}
                 />
                 <h2>Generations: {this.state.generation}</h2>
+
+                <Card className="center">
+                    <Card.Body>
+                    <Card.Title className="center">Conway's Game of Life (<a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life" target="_blank">Wikipedia</a>)</Card.Title>
+                    <Card.Text>
+                    <ol>
+                        <li>Any live cell with fewer than two live neighbors dies, as if by underpopulation.</li>
+                        <li>Any live cell with two or three live neighbors lives on to the next generation.</li>
+                        <li>Any live cell with more than three live neighbors dies, as if by overpopulation.</li>
+                        <li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li>
+                    </ol>
+                    </Card.Text>
+                    </Card.Body>
+                </Card>
+
             </div>
         );
     }
